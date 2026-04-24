@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
 <body>
+    {% include 'nav.html' %}
     <div class="container-lg"> 
    <h1 class="text-center mt:2 mb:4">JOVIAN CAREER WEBSITE</h1>
     <img class="img-fluid custom-img" id="banner" src="{{ url_for('static', filename='career.jpg') }}">
