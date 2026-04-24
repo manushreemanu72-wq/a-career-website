@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Career website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <div class="container-lg"> 
+   <h1 class="text-center mt:2 mb:4">CAREER WEBSITE</h1>
+    <img class="img-fluid custom-img" id="banner" src="{{ url_for('static', filename='career.jpg') }}">
+<h2 class="text-center mt-2 mb-4">ABOUT US</h2>
+<p class="lead">At CareerPath, we believe every individual deserves the opportunity to discover their true potential
+     and pursue a fulfilling future. Our mission is to guide students, job seekers, and professionals toward 
+     meaningful career choices through expert resources, personalized recommendations, and real-world insights.
+      Whether you're exploring new fields, developing essential skills, or preparing for your next big opportunity,
+     CareerPath provides the tools and support you need to grow with confidence. Your journey
+     matters—and we're here to help you build a career that inspires, empowers, and elevates your life..</p>
+     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+     <div> {%for job in jobs%}
+    {%include 'jobitem.html'%}
+        {%endfor%}
+     </div>
+     <div class="text-center">
+     <button class="btn btn-primary">Contact Us</button>
+     <p class="mt-4">Copyright 2022</p>
+     </div>
+</div> 
+</body>
+</html>
+
+
