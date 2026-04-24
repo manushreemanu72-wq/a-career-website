@@ -1,5 +1,5 @@
 
-# Career Website (Flask)
+# Jovian Career Website (Flask)
 
 This is a simple Flask-based career website that displays job listings.
 
