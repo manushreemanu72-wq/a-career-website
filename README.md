@@ -14,4 +14,4 @@ This is a simple Flask-based career website that displays job listings.
 
 ## How to Run
 ```bash
-python app.py
+python project.py
